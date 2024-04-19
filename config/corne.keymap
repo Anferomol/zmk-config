@@ -24,10 +24,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T    &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G    &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LGUI  &mo 2  &mo 3    &kp SPACE  &mo 1  &kp RALT
+&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T    &kp Y      &kp U  &kp I         &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G    &kp H      &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp RSHFT
+                                &kp LGUI  &mo 2  &mo 3    &kp SPACE  &mo 1  &kp LEFT_ALT
             >;
         };
 
@@ -39,19 +39,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL    &kp AT      &kp HASH    &kp DLLR      &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans      &trans      &trans      &trans        &trans             &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &bl BL_TOG  &bl BL_INC  &bl BL_DEC  &bl BL_CYCLE  &rgb_ug RGB_TOG    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &mo 5
-                                   &kp LGUI    &trans        &kp SPACE          &kp RET    &trans     &kp RALT
+&kp TILDE  &kp EXCL    &kp AT      &kp HASH    &kp DLLR      &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &trans      &trans      &trans      &trans        &trans             &kp MINUS  &kp EQUAL  &kp LBKT       &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &bl BL_TOG  &bl BL_INC  &bl BL_DEC  &bl BL_CYCLE  &rgb_ug RGB_TOG    &kp UNDER  &kp PLUS   &kp LBRC       &kp RBRC  &kp PIPE  &mo 5
+                                   &kp LGUI    &trans        &kp SPACE          &kp RET    &trans     &kp RIGHT_ALT
             >;
         };
 
         layer_3 {
             bindings = <
-&kp ESCAPE   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans             &trans             &trans  &trans           &trans    &kp QUESTION   &trans  &trans
-&kp LA(TAB)  &trans      &trans             &trans           &trans             &trans             &trans  &kp PRINTSCREEN  &kp HOME  &kp PAGE_UP    &trans  &kp ENTER
-&trans       &trans      &trans             &trans           &ext_power EP_TOG  &rgb_ug RGB_TOG    &trans  &kp INSERT       &kp END   &kp PAGE_DOWN  &trans  &trans
-                                            &trans           &trans             &trans             &trans  &trans           &trans
+&kp ESCAPE   &kp C_MUTE     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans             &trans             &trans  &trans           &trans    &kp QUESTION   &trans  &trans
+&kp LA(TAB)  &trans         &trans             &trans           &trans             &kp ENTER          &trans  &kp PRINTSCREEN  &kp HOME  &kp PAGE_UP    &trans  &kp ENTER
+&trans       &kp LESS_THAN  &trans             &trans           &ext_power EP_TOG  &rgb_ug RGB_TOG    &trans  &kp INSERT       &kp END   &kp PAGE_DOWN  &trans  &kp LEFT_SHIFT
+                                               &trans           &trans             &trans             &trans  &trans           &trans
             >;
         };
 
