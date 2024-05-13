@@ -34,6 +34,20 @@
             bindings = <&kp N6 &kp N8 &kp N9 &kp N1 &kp N5 &kp N2 &kp N5 &kp N0 &kp N0>;
             label = "NH_NUMBER";
         };
+
+        SUGUS_USR: SUGUS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(W) &kp LS(U) &kp LS(E) &kp LS(A) &kp LS(R) &kp LS(O) &kp N6 &kp N5>;
+            label = "SUGUS";
+        };
+
+        SUGUS_PASS: SUGUS_PASS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(K) &kp R &kp N2 &kp A &kp C &kp K &kp E &kp N &kp EXCL>;
+            label = "SUGUS_PASS";
+        };
     };
 
     keymap {
@@ -80,10 +94,10 @@
 
         layer_7 {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans       &NH_NUMBER  &NH_EVOLUTION    &NH_APERTURA  &trans         &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &kp ENTER    &trans      &kp PRINTSCREEN  &kp HOME      &kp PAGE_UP    &trans  &kp ENTER
-&trans      &trans  &trans  &trans  &trans  &trans       &trans      &kp INSERT       &kp END       &kp PAGE_DOWN  &trans  &kp LEFT_SHIFT
-                            &trans  &trans  &trans       &kp SPACE   &trans           &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans       &NH_NUMBER   &NH_EVOLUTION    &NH_APERTURA  &trans         &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &kp ENTER    &SUGUS_USR   &kp PRINTSCREEN  &kp HOME      &kp PAGE_UP    &trans  &kp ENTER
+&trans      &trans  &trans  &trans  &trans  &trans       &SUGUS_PASS  &kp INSERT       &kp END       &kp PAGE_DOWN  &trans  &kp LEFT_SHIFT
+                            &trans  &trans  &trans       &kp SPACE    &trans           &trans
             >;
         };
 
