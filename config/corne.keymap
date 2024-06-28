@@ -17,14 +17,14 @@
         NH_EVOLUTION: NH_EVOLUTION {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(C) &kp O &kp R &kp R &kp E &kp O &kp SPACE &kp D &kp E &kp SPACE &kp LS(E) &kp V &kp O &kp L &kp U &kp C &kp I &kp O &kp N &kp RET &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp ENTER>;
+            bindings = <&none &kp LS(C) &kp O &kp R &kp R &kp E &kp O &kp SPACE &kp D &kp E &kp SPACE &kp LS(E) &kp V &kp O &kp L &kp U &kp C &kp I &kp O &kp N &kp RET>;
             label = "NH_EVOLUTION";
         };
 
         NH_APERTURA: NH_APERTURA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(C) &kp O &kp R &kp R &kp E &kp O &kp SPACE &kp D &kp E &kp SPACE &kp LS(A) &kp P &kp E &kp R &kp T &kp U &kp R &kp A &kp RET &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp UNDER &kp RET>;
+            bindings = <&none &kp LS(C) &kp O &kp R &kp R &kp E &kp O &kp SPACE &kp D &kp E &kp SPACE &kp LS(A) &kp P &kp E &kp R &kp T &kp U &kp R &kp A &kp RET>;
             label = "NH_APERTURA";
         };
 
@@ -45,7 +45,7 @@
         SUGUS_PASS: SUGUS_PASS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(K) &kp R &kp N2 &kp A &kp C &kp K &kp E &kp N &kp EXCL>;
+            bindings = <&none &kp LS(K) &kp R &kp N3 &kp A &kp C &kp K &kp E &kp N &kp EXCL>;
             label = "SUGUS_PASS";
         };
     };
