@@ -33,7 +33,7 @@
         TELF_PASS: NH_NUMBER {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp R &kp N6 &kp A &kp C &kp K &kp E &kp N &kp N2 &kp N0 &kp N2 &kp N4>;
+            bindings = <&kp LS(K) &kp R &kp N7 &kp A &kp C &kp K &kp E &kp N &kp N2 &kp N0 &kp N2 &kp N4>;
             label = "NH_NUMBER";
         };
 
@@ -47,7 +47,7 @@
         SUGUS_PASS: SUGUS_PASS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(K) &kp R &kp N4 &kp A &kp C &kp K &kp E &kp N &kp EXCL &kp N1>;
+            bindings = <&none &kp LS(K) &kp R &kp N4 &kp A &kp C &kp K &kp E &kp N &kp EXCL &kp N2>;
             label = "SUGUS_PASS";
         };
     };
