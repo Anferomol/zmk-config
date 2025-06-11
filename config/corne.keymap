@@ -16,10 +16,10 @@
 
 / {
     macros {
-        NH_EVOLUTION: NH_EVOLUTION {
+        Telf_evolution: NH_EVOLUTION {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(C) &kp O &kp R &kp R &kp E &kp O &kp SPACE &kp D &kp E &kp SPACE &kp LS(E) &kp V &kp O &kp L &kp U &kp C &kp I &kp O &kp N &kp RET>;
+            bindings = <&kp LS(I) &kp N &kp F &kp O &kp R &kp M &kp A &kp M &kp O &kp S &kp SPACE &kp A &kp SPACE &kp D &kp E &kp SPACE &kp L &kp A &kp SPACE &kp E &kp O &kp V &kp L &kp U &kp C &kp I &kp O &kp N &kp SPACE &kp D &kp E &kp SPACE &kp L &kp A &kp SPACE &kp I &kp N &kp C &kp I &kp D &kp E &kp N &kp C &kp I &kp A>;
             label = "NH_EVOLUTION";
         };
 
@@ -33,7 +33,7 @@
         TELF_PASS: NH_NUMBER {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp R &kp N7 &kp A &kp C &kp K &kp E &kp N &kp N2 &kp N0 &kp N2 &kp N4>;
+            bindings = <&kp LS(K) &kp R &kp N8 &kp A &kp C &kp K &kp E &kp N &kp N2 &kp N0 &kp N2 &kp N4>;
             label = "NH_NUMBER";
         };
 
@@ -47,7 +47,7 @@
         SUGUS_PASS: SUGUS_PASS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(K) &kp R &kp N4 &kp A &kp C &kp K &kp E &kp N &kp EXCL &kp N2>;
+            bindings = <&kp LS(K) &kp R &kp N8 &kp A &kp C &kp K &kp E &kp N &kp EXCL &kp N2 &kp N0 &kp N2 &kp N4>;
             label = "SUGUS_PASS";
         };
     };
@@ -96,7 +96,7 @@
 
         layer_7 {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans       &TELF_PASS   &NH_EVOLUTION    &NH_APERTURA_CEX02  &trans         &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans       &TELF_PASS   &Telf_evolution  &NH_APERTURA_CEX02  &trans         &trans  &trans
 &trans      &trans  &trans  &trans  &trans  &kp ENTER    &SUGUS_USR   &kp PRINTSCREEN  &kp HOME            &kp PAGE_UP    &trans  &kp ENTER
 &trans      &trans  &trans  &trans  &trans  &trans       &SUGUS_PASS  &kp INSERT       &kp END             &kp PAGE_DOWN  &trans  &kp LEFT_SHIFT
                             &trans  &trans  &trans       &kp SPACE    &trans           &trans
