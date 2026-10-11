@@ -1,13 +1,7 @@
 # This file generates the GitHub Actions matrix.
-# For simple board + shield combinations, add them to the top level board and
-# shield arrays, for more control, add individual board + shield combinations
-# to the `include` property. You can also use the `cmake-args` property to
-# pass flags to the build command and `artifact-name` to assign a name to
-# distinguish build outputs from each other:
-#
-# board: [ "nice_nano_v2" ]
-# shield: [ "corne_left", "corne_right" ]
-# include:
+# See https://zmk.dev/docs/customization/build-matrix (board + shield, snippet, cmake-args, artifact-name)
+---
+include:
   - board: nice_nano//zmk
     shield: corne_left nice_view_adapter nice_view
     snippet: studio-rpc-usb-uart
