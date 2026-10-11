@@ -30,12 +30,6 @@
             label = "NH_APERTURA";
         };
 
-        TELF_PASS: NH_NUMBER {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp R &kp N8 &kp A &kp C &kp K &kp E &kp N &kp N2 &kp N0 &kp N2 &kp N4>;
-            label = "NH_NUMBER";
-        };
 
         SUGUS_USR: SUGUS {
             compatible = "zmk,behavior-macro";
@@ -44,18 +38,13 @@
             label = "SUGUS";
         };
 
-        SUGUS_PASS: SUGUS_PASS {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp R &kp N8 &kp A &kp C &kp K &kp E &kp N &kp EXCL &kp N2 &kp N0 &kp N2 &kp N4>;
-            label = "SUGUS_PASS";
-        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "Base";
             // -----------------------------------------------------------------------------------------
             // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ñ  |  '   |
@@ -71,6 +60,7 @@
         };
 
         raise_layer {
+            display-name = "Raise";
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -86,6 +76,7 @@
         };
 
         functions {
+            display-name = "Fn";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
@@ -95,17 +86,19 @@
         };
 
         layer_7 {
+            display-name = "Macros";
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans       &TELF_PASS   &Telf_evolution  &NH_APERTURA_CEX02  &trans         &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans       &trans       &Telf_evolution  &NH_APERTURA_CEX02  &trans         &trans  &trans
 &trans      &trans  &trans  &trans  &trans  &kp ENTER    &SUGUS_USR   &kp PRINTSCREEN  &kp HOME            &kp PAGE_UP    &trans  &kp ENTER
-&trans      &trans  &trans  &trans  &trans  &trans       &SUGUS_PASS  &kp INSERT       &kp END             &kp PAGE_DOWN  &trans  &kp LEFT_SHIFT
+&trans      &trans  &trans  &trans  &trans  &trans       &trans        &kp INSERT       &kp END             &kp PAGE_DOWN  &trans  &kp LEFT_SHIFT
                             &trans  &trans  &trans       &kp SPACE    &trans           &trans
             >;
         };
 
         layer_3 {
+            display-name = "Media";
             bindings = <
-&kp ESCAPE  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans             &trans             &trans     &trans  &trans                &kp QUESTION           &trans  &trans
+&kp ESCAPE  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &studio_unlock             &trans             &trans     &trans  &trans                &kp QUESTION           &trans  &trans
 &kp TAB     &trans      &trans             &trans           &kp RIGHT_ALT      &kp ENTER          &trans     &trans  &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &trans  &kp ENTER
 &to 7       &trans      &trans             &trans           &ext_power EP_TOG  &rgb_ug RGB_TOG    &trans     &trans  &kp RA(SQT)           &kp RA(BSLH)           &trans  &kp LEFT_SHIFT
                                            &trans           &trans             &trans             &kp SPACE  &mo 3   &trans
@@ -113,6 +106,7 @@
         };
 
         lower_layer {
+            display-name = "Lower";
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -128,6 +122,7 @@
         };
 
         numbers {
+            display-name = "Numpad";
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans    &kp ASTERISK   &kp N7           &kp N8  &kp N9  &kp MINUS  &trans
 &trans  &trans  &trans     &trans     &trans     &trans    &kp KP_DIVIDE  &kp N4           &kp N5  &kp N6  &kp RBKT   &trans
@@ -137,6 +132,7 @@
         };
 
         gaming {
+            display-name = "Gaming";
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I         &kp O    &kp P     &kp BSPC
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
@@ -146,6 +142,7 @@
         };
 
         gaming_numbers {
+            display-name = "GameNum";
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &to 0   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
